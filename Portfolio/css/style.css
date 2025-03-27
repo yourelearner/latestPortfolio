@@ -275,7 +275,38 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
-
+        .projects__row-img-overlay {
+          position: absolute;
+          top: 14.3%;
+          left: 13%;
+          width: 36.2%;
+          height: 10.9%;
+          object-fit: cover;
+            }
+            .projects__row-img-overlay1 {
+            position: absolute;
+            top: 33%;
+            left: 13%;
+            width: 36.2%;
+            height: 10.9%; 
+            object-fit: cover;
+            }
+            .projects__row-img-overlay2 {
+            position: absolute;
+            top: 51.7%;
+            left: 13%;
+            width: 36.2%;
+            height: 10.8%; 
+            object-fit: cover;
+            }
+            .projects__row-img-overlay3 {
+                position: absolute;
+                top: 70.4%;
+                left: 13%;
+                width: 36.2%;
+                height: 10.8%;
+                object-fit: cover;
+            }
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
