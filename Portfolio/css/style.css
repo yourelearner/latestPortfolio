@@ -185,8 +185,9 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(10, 39, 66, 0.8)), url(../assets/svg/Cloudy.svg);
   background-position: center;
+  background-size: cover;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
@@ -323,19 +324,19 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(10, 39, 66, 0.8)), url(../assets/svg/Cloudy.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: white;
-    padding: 4rem;
-    margin-top: 6rem;
-    max-width: 80rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    max-width: 50rem;
     text-align: right;
-    width: 95%;
+    width: 90%;
     border-radius: 5px;
-    margin: 5rem auto 0 auto; }
+    margin: 3rem auto 0 auto; }
     @media only screen and (max-width: 37.5em) {
       .contact__form-container {
         padding: 3rem; } }
@@ -354,10 +355,10 @@ textarea {
     text-align: left; }
   .contact__form-input {
     color: #333;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     border: 1px solid #ebebeb;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: 0px;
     background: #f0f0f0;
     border-radius: 5px;
@@ -395,16 +396,16 @@ textarea {
       font-weight: 600;
       font-size: 1.6rem; }
   .contact__btn {
-    width: 30%;
-    padding: 2rem 4rem;
-    font-size: 1.6rem; }
+    width: auto;
+    padding: 1rem 2rem;
+    font-size: 1.4rem; }
     @media only screen and (max-width: 37.5em) {
       .contact__btn {
         width: 100%; } }
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(10, 39, 66, 0.8)), url(../assets/svg/Cloudy.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
