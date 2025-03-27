@@ -277,35 +277,67 @@ textarea {
         margin-bottom: 4rem; }
         .projects__row-img-overlay {
           position: absolute;
-          top: 14.3%;
+          top: 14.7%;
           left: 13%;
           width: 36.2%;
-          height: 10.9%;
+          height: 11.2%;
           object-fit: cover;
             }
             .projects__row-img-overlay1 {
             position: absolute;
-            top: 33%;
+            top: 34%;
             left: 13%;
             width: 36.2%;
-            height: 10.9%; 
+            height: 11.1%; 
             object-fit: cover;
             }
             .projects__row-img-overlay2 {
             position: absolute;
-            top: 51.7%;
+            top: 53.2%;
             left: 13%;
             width: 36.2%;
-            height: 10.8%; 
+            height: 11.1%; 
             object-fit: cover;
             }
             .projects__row-img-overlay3 {
                 position: absolute;
-                top: 70.4%;
+                top: 72.4%;
                 left: 13%;
                 width: 36.2%;
-                height: 10.8%;
+                height: 11.2%;
                 object-fit: cover;
+            }
+            .interests__grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+              gap: 2rem; /* Space between cards */
+              margin-top: 2rem;
+            }
+            
+            .interests__card {
+              background-color: #f9f9f9;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              padding: 1.5rem;
+              text-align: center;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .interests__icon {
+              width: 50px;
+              height: 50px;
+              margin-bottom: 1rem;
+            }
+            
+            .interests__item-title {
+              font-size: 2rem;
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            }
+            
+            .interests__item-desc {
+              font-size: 1.25rem;
+              color: #555;
             }
 .projects__row {
   display: grid;
@@ -641,11 +673,12 @@ textarea {
 
 .main-footer {
   background: #000;
-  color: #fff; }
+  color: #fff;
+  padding: 2rem 0; }
   .main-footer__upper {
     display: flex;
     justify-content: space-between;
-    padding: 8rem 0; }
+    padding: 4rem 0; }
     @media only screen and (max-width: 56.25em) {
       .main-footer__upper {
         padding: 6rem 0; } }
@@ -677,7 +710,7 @@ textarea {
     .main-footer__icon--mr-none {
       margin-right: 0; }
   .main-footer__lower {
-    padding: 4rem 0;
+    padding: 2rem 0;
     border-top: 1px solid #444;
     color: #eee;
     font-size: 1.2rem;
