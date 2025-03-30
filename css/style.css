@@ -640,7 +640,7 @@ textarea {
     padding: 1rem 5rem; }
     @media only screen and (max-width: 56.25em) {
       .header {
-        padding: 2rem 2rem;
+        padding: 1rem 1rem;
       }}
   .header__logo-container {
     display: flex;
