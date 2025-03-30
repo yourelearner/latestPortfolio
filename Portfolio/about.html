@@ -15,33 +15,6 @@
       rel="stylesheet"
     />
   </head>
-  <style>
-/* About Section */
-.about__content {
-  display: flex;
-  align-items: center; /* Aligns items vertically in the center */
-  justify-content: space-between; /* Adds space between the text and the image */
-  gap: 2rem; /* Adds spacing between the two sections */
-  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
-}
-
-.about__content-main {
-  flex: 1; /* Takes up equal space */
-}
-
-.about__content-image {
-  flex: 1; /* Takes up equal space */
-  text-align: right; /* Aligns the image to the right */
-}
-
-.about__image {
-  max-width: 90%; /* Adjust the size of the image */
-  height: auto;
-  border-radius: 50%; /* Makes the image rounded */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  border: 5px solid #f0f0f0; /* Adds a border around the image */
-}
-  </style>
   <body>
     <header class="header">
       <div class="header__content">
@@ -129,34 +102,38 @@
             Turning ideas into functional and user-friendly web applications
           </span>
         </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! I'm a third-year <strong>Computer Science</strong> student at Cavite State University
-                with a strong passion for web development and software engineering.
-                I enjoy turning ideas into functional and user-friendly digital solutions.
-                My technical skills include <strong>HTML</strong>, <strong>CSS</strong>, <strong>SCSS</strong>, <strong>JavaScript</strong>, <strong>React</strong>, <strong>PHP</strong>, <strong>Python</strong>, <strong>MySQL</strong>,
-                and <strong>MongoDB</strong>, along with experience in frameworks like <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>,
-                and <strong>Laravel</strong>. I’m always eager to learn new technologies and improve my problem-solving abilities
-                through hands-on projects. Currently, I’m working on innovative systems like Digiboard, a real-time interactive whiteboard.
-              </p>
-              <p class="about__content-details-para">
-                My goal is to become a skilled <strong>Full-Stack Developer</strong> and contribute to impactful software solutions. 
-                <strong>Let’s build something great together!</strong> Feel free to
-                <strong>contact</strong> me here.
-              </p>
+        <div class="about__card">
+          <div class="about__content">
+            <div class="about__content-main">
+              <h3 class="about__content-title">Get to know me!</h3>
+              <div class="about__content-details">
+                <p class="about__content-details-para">
+                  Hey! I'm a third-year <strong>Computer Science</strong> student at Cavite State University
+                  with a strong passion for web development and software engineering.
+                  I enjoy turning ideas into functional and user-friendly digital solutions.
+                  My technical skills include <strong>HTML</strong>, <strong>CSS</strong>, <strong>SCSS</strong>, <strong>JavaScript</strong>, <strong>React</strong>, <strong>PHP</strong>, <strong>Python</strong>, <strong>MySQL</strong>,
+                  and <strong>MongoDB</strong>, along with experience in frameworks like <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>,
+                  and <strong>Laravel</strong>. I’m always eager to learn new technologies and improve my problem-solving abilities
+                  through hands-on projects. Currently, I’m working on innovative systems like Digiboard, a real-time interactive whiteboard.
+                </p>
+                <p class="about__content-details-para">
+                  My goal is to become a skilled <strong>Full-Stack Developer</strong> and contribute to impactful software solutions. 
+                  <strong>Let’s build something great together!</strong> Feel free to
+                  <strong>contact</strong> me here.
+                </p>
+              </div>
             </div>
-            <a href="./contact.html" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+            <div class="about__content-image">
+              <img
+                src="./assets/png/leonardpicture.jpg"
+                alt="Leonard Gatpolintan"
+                class="about__image"
+              />
+            </div>
           </div>
-          <div class="about__content-image">
-            <img
-              src="./assets/png/leonardpicture.jpg"
-              alt="Leonard Gatpolintan"
-              class="about__image"
-            />
-          </div>
+        </div>
+        <div class="about__contact-btn">
+          <a href="./contact.html" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
         </div>
       </div>
     </section>
