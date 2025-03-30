@@ -1,27 +1,18 @@
+// Select elements
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont');
 const smallMenu = document.querySelector('.header__sm-menu');
 const headerHamMenuBtn = document.querySelector('.header__main-ham-menu');
 const headerHamMenuCloseBtn = document.querySelector('.header__main-ham-menu-close');
-const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
 
-// Toggle the small menu and hamburger icons
-hamMenuBtn.addEventListener('click', () => {
-  smallMenu.classList.toggle('header__sm-menu--active');
-  headerHamMenuBtn.classList.toggle('d-none');
-  headerHamMenuCloseBtn.classList.toggle('d-none');
-});
-
-// Close the small menu when a link is clicked
-headerSmallMenuLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    smallMenu.classList.remove('header__sm-menu--active');
-    headerHamMenuBtn.classList.remove('d-none');
-    headerHamMenuCloseBtn.classList.add('d-none');
+// Check if elements exist before adding event listeners
+if (hamMenuBtn && smallMenu && headerHamMenuBtn && headerHamMenuCloseBtn) {
+  // Toggle the small menu and hamburger icons
+  hamMenuBtn.addEventListener('click', () => {
+    smallMenu.classList.toggle('header__sm-menu--active');
+    headerHamMenuBtn.classList.toggle('d-none');
+    headerHamMenuCloseBtn.classList.toggle('d-none');
+    console.log('Hamburger menu clicked'); // Debugging log
   });
-});
-
-// Redirect to the homepage when the logo is clicked
-const headerLogoContainer = document.querySelector('.header__logo-container');
-headerLogoContainer.addEventListener('click', () => {
-  location.href = 'index.html';
-});
+} else {
+  console.error('One or more elements are missing. Check your HTML structure.');
+}
