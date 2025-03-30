@@ -622,22 +622,21 @@ textarea {
         .project-details__links-btn:last-child {
           margin: 0; } }
 
-.header {
-  position: fixed;
-  padding: 1rem 2rem;
-  width: 100%;
-  z-index: 1000;
-  background: #000;
-  background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
-  .header__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 5rem; }
-    @media only screen and (max-width: 56.25em) {
-      .header__content {
-        padding: 0 2rem; } }
+          .header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: #000;
+            background: #fff;
+            box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
+            .header__content {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 1rem 5rem; }
+              @media only screen and (max-width: 56.25em) {
+                .header__content {
+                  padding: 0 2rem; } }
   .header__logo-container {
     display: flex;
     position: relative;
