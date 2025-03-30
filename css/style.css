@@ -627,8 +627,6 @@ textarea {
   padding: 1rem 2rem;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   z-index: 1000;
   background: #000;
   background: #fff;
@@ -639,9 +637,8 @@ textarea {
     justify-content: space-between;
     padding: 1rem 5rem; }
     @media only screen and (max-width: 56.25em) {
-      .header {
-        padding: 1rem 1rem;
-      }}
+      .header__content {
+        padding: 0 2rem; } }
   .header__logo-container {
     display: flex;
     position: relative;
