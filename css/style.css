@@ -693,9 +693,10 @@ textarea {
     align-items: center;
     width: 3rem;
     cursor: pointer;
-    padding: 2.2rem 0; }
+    padding: 1rem; }
     @media only screen and (max-width: 768px) {
       .header__main-ham-menu-cont {
+        display: flex;
         width: 3rem;
         padding: 0.5rem; } }
   .header__main-ham-menu, .header__main-ham-menu-close {
