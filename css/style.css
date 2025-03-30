@@ -747,6 +747,9 @@ textarea {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
     border-bottom: 0; }
+    .header__sm-menu-link a:hover {
+      color: #0062b9;
+    }
 
 .main-footer {
   background: #000;
