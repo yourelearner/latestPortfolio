@@ -16,3 +16,11 @@ if (hamMenuBtn && smallMenu && headerHamMenuBtn && headerHamMenuCloseBtn) {
 } else {
   console.error('One or more elements are missing. Check your HTML structure.');
 }
+
+const logoSub = document.querySelector('.header__logo-sub');
+
+if (logoSub) {
+  logoSub.addEventListener('click', () => {
+    window.location.href = './index.html'; // Redirect to the home page
+  });
+}

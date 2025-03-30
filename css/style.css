@@ -639,7 +639,9 @@ textarea {
         padding: 0 2rem; } }
   .header__logo-container {
     display: flex;
+    position: relative;
     align-items: center;
+    z-index: 1000;;
     cursor: pointer;
     color: #333;
     transition: color .3s; }
@@ -691,6 +693,7 @@ textarea {
   .header__main-ham-menu-cont {
     display: none;
     align-items: center;
+    z-index: 1000;
     width: 3rem;
     cursor: pointer;
     padding: 1rem; }
