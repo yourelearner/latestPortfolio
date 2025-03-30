@@ -638,14 +638,11 @@ textarea {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5rem; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 56.25em) {
       .header {
         padding: 2rem 2rem;
       }
-      .header__content {
-        flex-direction: column;
-        align-items: center;
-      }}
+    }
   .header__logo-container {
     display: flex;
     position: relative;
