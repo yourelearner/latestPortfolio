@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resume</title>
+    <link href="./assets/svg/myLogo.svg" rel="icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+.resume-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10rem; /* Add space below the navbar */
+}
+
+.header {
+  position: fixed; /* Ensure the navbar stays fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+      .resume-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .resume-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .resume-header p {
+        font-size: 1.25rem;
+        color: #555;
+      }
+      .resume-display {
+        margin: 2rem 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .resume-iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+      }
+      .download-btn {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        padding: 0.8rem 1.5rem;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.25rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        width: auto;
+        max-width: 200px;
+      }
+      .download-btn:hover {
+        background-color: #0056b3;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__content">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+              <img
+                src="./assets/png/leonardpicture.jpg"
+                alt="Leonard Logo Image"
+                class="header__logo-img"
+              />
+            </div>
+            <span class="header__logo-sub">Leonard</span>
+          </div>
+          <div class="header__main">
+            <ul class="header__links">
+              <li class="header__link-wrapper">
+                <a href="./index.html" class="header__link">Home</a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./about.html" class="header__link">About</a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./projects.html" class="header__link">Projects</a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./challenges.html" class="header__link">Challenges & Learnings</a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./skills.html" class="header__link">Skills</a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./future.html" class="header__link">Future Plans</a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./resume.html" class="header__link">Resume</a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./contact.html" class="header__link">Contact</a>
+              </li>
+            </ul>
+            <div class="header__main-ham-menu-cont">
+              <img
+                src="./assets/svg/ham-menu.svg"
+                alt="hamburger menu"
+                class="header__main-ham-menu"
+              />
+              <img
+                src="./assets/svg/ham-menu-close.svg"
+                alt="hamburger menu close"
+                class="header__main-ham-menu-close d-none"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__sm-menu">
+          <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+              <li class="header__sm-menu-link">
+                <a href="./index.html"> Home </a>
+              </li>
+              <li class="header__sm-menu-link">
+                <a href="./about.html"> About </a>
+              </li>
+              <li class="header__sm-menu-link">
+                <a href="./projects.html"> Projects </a>
+              </li>
+              <li class="header__sm-menu-link">
+                  <a href="./challenges.html"> Challenges & Learnings </a>
+                </li>
+                <li class="header__sm-menu-link">
+                  <a href="./skills.html"> Skills </a>
+                </li>
+              <li class="header__sm-menu-link">
+                  <a href="./future.html"> Future plans </a>
+                </li>
+              <li class="header__sm-menu-link">
+                  <a href="./resume.html"> Resume </a>
+                </li>
+              <li class="header__sm-menu-link">
+                <a href="./contact.html"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </header>
+    <main>
+      <div class="resume-container">
+        <div class="resume-header">
+          <h1>Leonard E. Gatpolintan</h1>
+          <p>Frontend Developer | Full-Stack Enthusiast</p>
+        </div>
+        <div class="resume-display">
+          <iframe
+            src="./assets/jpeg/LG_Resume.pdf"
+            class="resume-iframe"
+            frameborder="0"
+            width="100%"
+            height="600px"
+          >
+            Your browser does not support iframes. Please download the resume using the button below.
+          </iframe>
+        </div>
+        <a
+          href="./assets/jpeg/LG_Resume.pdf"
+          class="download-btn"
+          download="LG_Resume.pdf"
+        >
+          Download Resume
+        </a>
+      </div>
+    </main>
+    <footer class="main-footer">
+        <div class="main-container">
+          <div class="main-footer__upper">
+            <div class="main-footer__row main-footer__row-1">
+              <h2 class="heading heading-sm main-footer__heading-sm">
+                <span>Social</span>
+              </h2>
+              <div class="main-footer__social-cont">
+                <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/leonard-gatpolintan-37a6a4358">
+                  <img
+                    class="main-footer__icon"
+                    src="./assets/png/linkedin-ico.png"
+                    alt="icon"
+                  />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/yourelearner">
+                  <img
+                    class="main-footer__icon"
+                    src="./assets/png/github-ico.png"
+                    alt="icon"
+                  />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://x.com/3in1coffee20">
+                  <img
+                    class="main-footer__icon"
+                    src="./assets/png/twitter-ico.png"
+                    alt="icon"
+                  />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Gatzkie">
+                  <img
+                    class="main-footer__icon"
+                    src="./assets/png/fb-ico.png"
+                    alt="icon"
+                  />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/definitelynotleonaard/"">
+                  <img
+                    class="main-footer__icon main-footer__icon--mr-none"
+                    src="./assets/png/insta-ico.png"
+                    alt="icon"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="main-footer__row main-footer__row-2">
+              <h4 class="heading heading-sm text-lt">Leonard Gatpolintan</h4>
+              <p class="main-footer__short-desc">
+                Let's connect and collaborate!
+              </p>
+            </div>
+          </div>
+          <div class="main-footer__lower">
+            &copy; Copyright 2025. Made by Leonard E. Gatpolintan
+          </div>
+        </div>
+      </footer>
+      <script src="./index.js"></script>
+    </body>
+  </html>

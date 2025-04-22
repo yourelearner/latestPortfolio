@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Interests</title>
+    <title>Challenges</title>
     <link href="../Portfolio/assets/svg/myLogo.svg" rel="icon">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,33 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+  .education__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .education__card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education__item-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .education__item-details,
+  .education__item-desc {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  </style>
   <body>
     <header class="header">
       <div class="header__content">
@@ -30,25 +57,28 @@
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link">Home</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./about.html" class="header__link">About </a>
+              <a href="./about.html" class="header__link">About</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./projects.html" class="header__link"> Projects </a>
+              <a href="./projects.html" class="header__link">Projects</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./education.html" class="header__link"> Education </a>
+              <a href="./challenges.html" class="header__link">Challenges & Learnings</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./skills.html" class="header__link"> Skills </a>
+              <a href="./skills.html" class="header__link">Skills</a>
             </li>
             <li class="header__link-wrapper">
-                <a href="./interest.html" class="header__link"> Interests </a>
-              </li>
+              <a href="./future.html" class="header__link">Future Plans</a>
+            </li>
             <li class="header__link-wrapper">
-              <a href="./contact.html" class="header__link"> Contact </a>
+              <a href="./resume.html" class="header__link">Resume</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./contact.html" class="header__link">Contact</a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -78,56 +108,59 @@
               <a href="./projects.html"> Projects </a>
             </li>
             <li class="header__sm-menu-link">
-                <a href="./education.html"> Education </a>
+                <a href="./challenges.html">Challenges & Learnings</a>
               </li>
               <li class="header__sm-menu-link">
                 <a href="./skills.html"> Skills </a>
               </li>
             <li class="header__sm-menu-link">
-                <a href="./interest.html"> Interests </a>
+                <a href="./future.html"> Future plans </a>
+              </li>
+            <li class="header__sm-menu-link">
+                <a href="./resume.html"> Resume </a>
               </li>
             <li class="header__sm-menu-link">
               <a href="./contact.html"> Contact </a>
             </li>
           </ul>
         </div>
+        </div>
       </div>
     </header>
-    <section id="interests" class="interests sec-pad">
+    <section id="challenges-learnings" class="challenges-learnings sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">Interests</span>
+          <span class="heading-sec__main">Challenges and Learnings</span>
           <span class="heading-sec__sub">
-            Some of my hobbies and interests
+            A reflection on the obstacles I've faced and the lessons I've learned.
           </span>
         </h2>
-        <div class="interests__grid">
-          <div class="interests__card">
-            <img src="./assets/png/graphic-design-icon.png" alt="Graphic Design Icon" class="interests__icon" />
-            <h3 class="interests__item-title">Graphic Design</h3>
-            <p class="interests__item-desc">
-              I enjoy creating visually appealing designs and working with tool like Inkscape.
+        <div class="challenges-learnings__grid">
+          <div class="challenges-learnings__card">
+            <h3 class="challenges-learnings__item-title">Coping with the Loss of My Mother</h3>
+            <p class="challenges-learnings__item-details">
+              Losing my mother at the age of 16 was a deeply emotional and life-changing experience.
+            </p>
+            <p class="challenges-learnings__item-desc">
+              It taught me the importance of emotional strength, independence, and staying focused despite personal hardships.
             </p>
           </div>
-          <div class="interests__card">
-            <img src="./assets/png/outdoor-activities-icon.png" alt="Outdoor Activities Icon" class="interests__icon" />
-            <h3 class="interests__item-title">Outdoor Activities</h3>
-            <p class="interests__item-desc">
-              Hiking, camping, and exploring nature are some of my favorite outdoor activities.
+          <div class="challenges-learnings__card">
+            <h3 class="challenges-learnings__item-title">Balancing Academics and Projects</h3>
+            <p class="challenges-learnings__item-details">
+              Managing time between academic responsibilities and personal projects was a significant challenge.
+            </p>
+            <p class="challenges-learnings__item-desc">
+              I learned the importance of prioritization, effective time management, and setting realistic goals to achieve balance.
             </p>
           </div>
-          <div class="interests__card">
-            <img src="./assets/png/frontend-development-icon.png" alt="Front-End Development Icon" class="interests__icon" />
-            <h3 class="interests__item-title">Front-End Development</h3>
-            <p class="interests__item-desc">
-              I love building interactive and user-friendly web interfaces using HTML, CSS, and JavaScript.
+          <div class="challenges-learnings__card">
+            <h3 class="challenges-learnings__item-title">Handling Group Project Challenges</h3>
+            <p class="challenges-learnings__item-details">
+              Working with teams that had conflicting schedules and communication gaps made collaboration difficult.
             </p>
-          </div>
-          <div class="interests__card">
-            <img src="./assets/png/computer-games-icon.png" alt="Computer Games Icon" class="interests__icon" />
-            <h3 class="interests__item-title">Computer Games</h3>
-            <p class="interests__item-desc">
-              Playing strategy and adventure games is one of my favorite ways to relax and have fun.
+            <p class="challenges-learnings__item-desc">
+              I learned to step up as a communicator, resolve conflicts, and adapt to different working styles to ensure project success.
             </p>
           </div>
         </div>
@@ -141,35 +174,35 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/leonard-gatpolintan-37a6a4358">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/yourelearner">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://x.com/3in1coffee20">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/twitter-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Gatzkie">
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
+                  src="./assets/png/fb-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/definitelynotleonaard/"">
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
                   src="./assets/png/insta-ico.png"
@@ -186,7 +219,7 @@
           </div>
         </div>
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by Leonard E. Gatpolintan
+          &copy; Copyright 2025. Made by Leonard E. Gatpolintan
         </div>
       </div>
     </footer>
